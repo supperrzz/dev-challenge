@@ -1,0 +1,33 @@
+.albums {
+  padding: 5rem 0;
+  &__heading {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  &__wrap {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 991px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .album {
+    aspect-ratio: 1 / 1;
+    &__content {
+      background: #eeeeee;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  }
+}
+

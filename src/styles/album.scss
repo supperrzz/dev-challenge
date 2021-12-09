@@ -1,0 +1,19 @@
+.album {
+  &__heading {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  &__photos__wrap {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 991px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
