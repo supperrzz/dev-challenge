@@ -52,7 +52,10 @@ export function Album() {
   return (
     <div className="section">
       <div className="album container">
-        <h1 className="album__heading">{album.title}</h1>
+        <div className="album__heading">
+          <h1>{album.title}</h1>
+          <a href="/">Back to Albums</a>
+        </div>
         <div className="album__photos__wrap">
           {albumPhotos}
         </div>

@@ -19,13 +19,13 @@ export function Albums() {
   const albumList = albums.map((item, i) => {
     if(i < maxAlbums) {
       return (
-        <div className="album">
-            <div className="album__content">
-              <a key={i} href={`/albums/${item.id}`}>
-                <p>{`${item.title}`}</p>
-              </a>
-            </div>
-        </div>
+        <a key={i} href={`/albums/${item.id}`}>
+          <div className="album">
+              <div className="album__content">
+                  <p>{`${item.title}`}</p>
+              </div>
+          </div>
+        </a>
       )
     }
   })
